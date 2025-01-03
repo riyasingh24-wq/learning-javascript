@@ -13,8 +13,28 @@ const user = {
 // user.WelcomeMessage()
 // console.log(this);
 
-function chai(){
+// function chai(){
+//       let username = "riya"
+//       console.log(this.username);
+// }
+// chai()
+
+const chai = () => {
       let username = "riya"
-      console.log(this.username);
+      console.log(this);
 }
-chai()
+// chai()
+
+// const addtwo = (num1, num2) => {
+//       return num1 + num2
+// }
+
+// const addtwo = (num1, num2) => num1 + num2
+// const addtwo = (num1, num2) => (num1 + num2)
+
+const addtwo = (num1, num2) => ({username: "riyaSingh"})
+
+console.log(addtwo(3,4));
+
+// const myArray = [2,3,5,6,7]
+// myArray.forEach()
